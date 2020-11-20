@@ -1,0 +1,593 @@
+:root {
+    --font-ral: 'Raleway', sans-serif;
+    --font-open: "Open Sans", sans-serif;
+    --color-blue: #08A6E4;
+    --color-tekstgrey: #A5A5A5;
+}
+
+* {
+    box-sizing: border-box;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1352px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 6px #00000029;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+
+header .container > a {
+    font-family: var(--font-ral);
+    font-size: 32px;
+    color: var(--color-blue);
+}
+
+header nav a {
+    font-family: var(--font-open);
+    font-size: 11px;
+    font-weight: 700;
+    display: inline-block;
+    text-transform: uppercase;
+    color: var(--color-tekstgrey);
+    padding: 25px 18px 34px;
+    border-bottom: 4px solid transparent;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+
+header nav a:hover {
+    color: black;
+    border-color: var(--color-blue);
+}
+
+.banner .container {
+    text-align: center;
+}
+
+.banner {
+    height: 700px ;
+    width: 100%;
+    background-image: url("../images/Background.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    margin-top: 200px;
+}
+
+.banner h1 {
+    font-size: 49px;
+    font-family: var(--font-ral);
+    font-weight: 400;
+}
+
+.banner p {
+    font-family: var(--font-open);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 38px;
+}
+
+.banner button {
+    color: white;
+    font-size: 16px;
+    font-family: var(--font-open);
+    font-weight: bold;
+    background: #08A6E4 0 0 no-repeat padding-box;
+    box-shadow: 5px 10px 14px #07ACE629;
+    border: none;
+    border-radius: 50px;
+    padding: 25px 150px;
+    outline: none;
+    cursor: pointer;
+}
+
+.banner button:active {
+    background-color: #b3d4fc;
+
+}
+
+.banner button:hover {
+    color: black;
+}
+.stats .container {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.stats h1 {
+    font-size: 36px;
+    font-family: var(--font-ral);
+    font-weight: 500;
+    text-align: center;
+    margin: 50px;
+}
+
+.stats .container div {
+    padding: 40px;
+    margin: 50px;
+}
+
+.stats div.container img {
+    width: 62px;
+    height: 62px;
+    margin-left: 30px;
+    position: relative;
+}
+
+.stats .container h2 {
+    font-family: var(--font-ral);
+    font-weight: 900;
+    text-align: center;
+    margin: 30px;
+}
+
+.stats .container p {
+    text-align: center;
+    font-family: var(--font-ral);
+    font-size: 16px;
+    color: var(--color-tekstgrey);
+}
+
+.stats div.container div::before {
+    content: "";
+    position: absolute;
+    margin-left: 12px;
+    width: 62px;
+    height: 62px;
+    background-color: #FB3B64;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.stats div.container div:nth-child(2)::before {
+    background-color: var(--color-blue);
+}
+
+.stats div.container div:nth-child(3)::before {
+    background-color: #55DFB4;
+}
+.benefits {
+    background-color: #F7F7F7;
+}
+.benefits .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.benefits .container div.alwaysfirst,
+.benefits .container div.yourshop{
+    width: 1124px;
+    height: 370px;
+    background-color: #FFFFFF;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.benefits .container div.lastbox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.benefits .container div.incrase {
+    background-color: #FFFFFF;
+    width: 623px;
+    height: 370px;
+    margin-right: 40px;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.benefits div.trumpet {
+    width: 440px;
+    height: 370px;
+    background-image: url("../images/Trumpet.png");
+    background-size: contain;
+    background-position: center;
+    background-color: #55DFB4;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.benefits label {
+    width: 416px;
+}
+
+.benefits h2 {
+    font-size: 36px;
+    font-family: var(--font-ral);
+    font-weight: 400;
+
+}
+
+.benefits p {
+    font-size: 16px;
+    font-family: var(--font-open);
+}
+
+.benefits .alwaysfirst p::after {
+    content: "";
+    display: block;
+    width: 328px;
+    height: 4px;
+    background-color: #FB3B64;
+    margin-top: 30px;
+}
+
+.benefits .yourshop p::after {
+    content: "";
+    display: block;
+    width: 328px;
+    height: 4px;
+    background-color: var(--color-blue);
+    margin-top: 30px;
+}
+
+.benefits .incrase p::after {
+    content: "";
+    display: block;
+    width: 328px;
+    height: 4px;
+    background-color: #55DFB4;
+    margin-top: 30px;
+}
+
+.image1, .image2 {
+    position: relative;
+}
+
+.image1 img, .image2 img {
+    position: relative;
+    z-index: 2;
+}
+.benefits .container .image1::after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 22px;
+    z-index: 1;
+}
+
+.benefits .container .image2::after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+}
+
+.benefits .container .image1::after {
+    background-color: #FB3B64;
+    border-radius: 40px;
+    transform: rotate(45deg);
+}
+
+.benefits .container .image2::after {
+    background-color: var(--color-blue);
+    border-radius: 50%;
+}
+
+
+div.incrase label {
+    display: flex;
+    width: 554px;
+    height: 370px;
+    text-align: center;
+}
+
+.pricing .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pricing .container div {
+    height: 461px;
+    width: 372px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.pricing .container div:nth-child(2) {
+    height: 500px;
+    width: 372px;
+    border-radius: 18px;
+    box-shadow: 5px 10px 27px #07ACE629;
+    text-align: center;
+}
+
+.pricing .container ul {
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.pricing .container div:first-child {
+    border: 1px solid #FB3B64;
+}
+
+.pricing .container div:nth-child(2) {
+    border: 1px solid #07ACE6;
+}
+
+.pricing .container div:nth-child(3) {
+    border: 1px solid #55DFB4;
+}
+
+
+.pricing h2 {
+    font-size: 36px;
+    font-family: var(--font-ral);
+    font-weight: 400;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing .container div h3 {
+    font-size: 20px;
+    font-family: var(--font-ral);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.pricing .container div strong {
+    font-size: 46px;
+    font-family: var(--font-open);
+    font-weight: 300;
+}
+
+.pricing .container div li {
+    font-size: 14px;
+    font-family: var(--font-ral);
+    font-weight: 400;
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+}
+
+
+.pricing .button a {
+    border-radius: 30px;
+    padding: 20px 40px;
+    font-family: var(--font-open);
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.pricing .container div:first-child a {
+    background-color: #EB476E;
+}
+
+.pricing .container div:nth-child(2) a {
+    background-color: #07ACE6;
+}
+
+.pricing .container div:nth-child(3) a {
+    background-color: #55DFB4;
+}
+
+.pricing .container div:first-child strong {
+    color: #EB476E;
+}
+
+.pricing div:nth-child(2) strong {
+    color: #07ACE6;
+}
+
+.pricing div:nth-child(3) strong {
+    color: #55DFB4;
+}
+
+.pricing span.green,
+.pricing span.red{
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 6px;
+    margin: 5px;
+    padding: 0 4px;
+}
+
+.pricing span.red {
+    color: #EB476E;
+    border: 2px solid #EB476E;
+}
+
+.pricing span.green {
+    color: #55DFB4;
+    border: 2px solid #55DFB4;
+}
+
+.pricing .container div.button  {
+    margin-top: 120px;
+}
+
+.pricing .container div:nth-child(2) .button  {
+    margin-top: 160px;
+}
+.contact .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.contact .questions h1 {
+    font-size: 49px;
+    font-family: var(--font-ral);
+    font-weight: 400;
+}
+
+.contact .questions > p {
+    font-size: 16px;
+    font-family: var(--font-open);
+    font-weight: 400;
+}
+
+.contact .questions span {
+    font-size: 16px;
+    font-family: var(--font-open);
+    font-weight: 500;
+    color: var(--color-tekstgrey);
+}
+
+.contact form {
+    margin-top: 240px;
+    margin-left: 80px;
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"]{
+    width: 440px;
+    padding: 8px 12px;
+    border: none;
+    border-bottom: 1px solid #95989A;
+    outline: none;
+}
+
+.row label span {
+    font-size: 11px;
+    font-family: var(--font-open);
+    color: var(--color-tekstgrey);
+}
+form .row label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: var(--font-open);
+    font-weight: 600;
+    color: var(--color-blue);
+}
+
+.checkbox {
+    padding: 5px;
+    margin: 5px;
+    font-family: var(--font-open);
+    font-size: 12px;
+    color: #707070;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #95989A;
+    background-color: white;
+    border-radius: 5px;
+    outline: none;
+    position: relative;
+}
+input[type="checkbox"]:checked {
+    background: white;
+}
+input[type="checkbox"]:checked:after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-image: url("../images/Checkmark.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.checkbox button {
+    margin: 40px 0 0 160px;
+}
+.contact button {
+    background-color: var(--color-blue);
+    box-shadow: 5px 10px 14px #07ACE629;
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    padding: 25px 110px;
+    font-family: var(--font-open);
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #FFFFFF;
+    box-shadow: 3px 3px 6px #00000029;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    font-size: 26px;
+    color: var(--color-blue);
+    font-family: var(--font-ral);
+    font-weight: 400;
+}
+
+footer p {
+    font-size: 11px;
+    color: var(--color-tekstgrey);
+    font-family: var(--font-open);
+}
+
+footer .social ul {
+    display: flex;
+    list-style: none;
+}
+
+footer .social li {
+    padding: 20px;
+}
